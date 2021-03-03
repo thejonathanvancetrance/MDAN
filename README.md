@@ -1,6 +1,6 @@
 # MDAN: Multiple Source Domain Adaptation with Adversarial Learning for Alfalfa
 
-##How to setup a VM that will run MDAN as of 3/3/2021, you should install miniconda first if you haven't already:
+## How to setup a VM that will run MDAN as of 3/3/2021, you should install miniconda first if you haven't already:
 1. create a conda virtual environment using command: conda create -n myenv python=3.6.6 scipy numpy (change myenv to mdan or something)
 2. activate your new environment: conda activate myenv
 3. remove other python installation: conda remove python 3.6.8
