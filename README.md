@@ -1,13 +1,13 @@
 # MDAN: Multiple Source Domain Adaptation with Adversarial Learning for Alfalfa
 
-## How to setup a VM that will run MDAN as of 3/3/2021, you should install miniconda first if you haven't already:
+## How to setup a VM that will run MDAN demo as of 3/3/2021, you should install miniconda first if you haven't already:
 1. create a conda virtual environment using command: conda create -n myenv python=3.6.6 scipy numpy (change myenv to mdan or something)
 2. activate your new environment: conda activate myenv
 3. remove other python installation: conda remove python 3.6.8
 4. install pytorch: conda install -c pytorch pytorch=1.0.0
 5. good luck! I hope I got that right, it's at least very close!
 6. now cd to the myenv directory and run: git clone https://github.com/thejonathanvancetrance/MDAN
-7. cd to myenv/MDAN and run: 
+7. cd to myenv/MDAN and run the deom: 
 ```python
 python main_amazon.py -o [maxmin|dynamic]
 ```
