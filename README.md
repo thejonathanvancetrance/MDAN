@@ -7,7 +7,7 @@
 4. install pytorch: conda install -c pytorch pytorch=1.0.0
 5. good luck! I hope I got this right, it's at least very close!
 
-Forked from:
+## This project is forked from:
 
 PyTorch demo code for paper [Multiple Source Domain Adaptation with Adversarial Learning](https://openreview.net/pdf?id=ryDNZZZAW) and [Adversarial Multiple Source Domain Adaptation](https://papers.nips.cc/paper/8075-adversarial-multiple-source-domain-adaptation.pdf) by [Han Zhao](http://www.cs.cmu.edu/~hzhao1/), [Shanghang Zhang](https://scholar.google.com/citations?user=voqw10cAAAAJ&hl=en), [Guanhang Wu](https://scholar.google.com/citations?user=0pF6i38AAAAJ&hl=en), [João Costeira](http://users.isr.ist.utl.pt/~jpc/), [José Moura](http://users.ece.cmu.edu/~moura/) and [Geoff Gordon](http://www.cs.cmu.edu/~ggordon/). 
 
