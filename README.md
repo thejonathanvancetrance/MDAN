@@ -5,7 +5,12 @@
 2. activate your new environment: conda activate myenv
 3. remove other python installation: conda remove python 3.6.8
 4. install pytorch: conda install -c pytorch pytorch=1.0.0
-5. good luck! I hope I got this right, it's at least very close!
+5. good luck! I hope I got that right, it's at least very close!
+6. now cd to the myenv directory and run: git clone https://github.com/thejonathanvancetrance/MDAN
+7. cd to myenv/MDAN and run: 
+```python
+python main_amazon.py -o [maxmin|dynamic]
+```
 
 ## This project is forked from:
 
