@@ -15,9 +15,10 @@ class GradientReversalLayer(torch.autograd.Function):
     Implement the gradient reversal layer for the convenience of domain adaptation neural network.
     The forward part is the identity function while the backward part is the negative function.
     """
+    @staticmethod
     def forward(self, inputs):
         return inputs
-
+    @staticmethod
     def backward(self, grad_output):
         grad_input = grad_output.clone()
         grad_input = -grad_input
@@ -63,8 +64,8 @@ class MDANet(nn.Module):
         # Domain classification accuracies.
         sdomains, tdomains = [], []
         for i in range(self.num_domains):
-            sdomains.append(F.log_softmax(self.domains[i](self.grls[i](sh_relu[i])), dim=1))
-            tdomains.append(F.log_softmax(self.domains[i](self.grls[i](th_relu)), dim=1))
+            sdomains.append(F.log_softmax(self.domains[i](self.grls[i].apply(sh_relu[i])), dim=1))
+            tdomains.append(F.log_softmax(self.domains[i](self.grls[i].apply(th_relu)), dim=1))
         return logprobs, sdomains, tdomains
 
     def inference(self, inputs):
@@ -74,4 +75,3 @@ class MDANet(nn.Module):
         # Classification probability.
         logprobs = F.log_softmax(self.softmax(h_relu), dim=1)
         return logprobs
-
